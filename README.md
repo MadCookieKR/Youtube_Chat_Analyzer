@@ -3,7 +3,7 @@ YouTube Chat Analyzer analyze chat and draw graph base on how people chat rapidl
 This program made for helping 'kirinuki' who doesn't have time to watch whole YouTube video.
 <br/>
 ## Demo
-![alt](demo01.png)
+![alt](demo.png)
 <br/>
 ## How to use
 [![시연](http://img.youtube.com/vi/xmQO6UU7H98/0.jpg)](https://www.youtube.com/watch?v=xmQO6UU7H98)
