@@ -6,9 +6,9 @@ import matplotlib.dates as mdates
 
 
 class graph_painter:
-    keywords = ['lmao', 'lol', 'lewd', 'yabe']
+    keywords: list = ['lmao', 'lol', 'lewd', 'yabe']
 
-    def __init__(self, chat: pytchat):
+    def __init__(self, chat: pytchat, keywords: list = None):
         self.chat = chat
         self.chat.get()  # 첫 데이터 버림
         self.acc = self.getHighlightScore(self.chat.get().items)
@@ -19,12 +19,17 @@ class graph_painter:
         self.y_avg_15 = []  # 1.15배
         self.y_avg_2 = []  # 1.2배
         self.ani = FuncAnimation(plt.gcf(), self.animate, interval=100)
+        if keywords:
+            self.keywords = keywords
+        print("Applied keywords : " + str(self.keywords))
+        print("적용된 키워드 : " + str(self.keywords))
 
     def draw_chat_graph(self):
         plt.show()
 
     def animate(self, i):
         if not self.chat.is_alive():
+            print("완료되었습니다.")
             self.ani.pause()
             return
 
