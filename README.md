@@ -5,9 +5,6 @@ This program made for helping 'kirinuki' who doesn't have time to watch whole Yo
 ## Demo
 ![alt](demo.png)
 <br/>
-## How to use
-[![시연](http://img.youtube.com/vi/xmQO6UU7H98/0.jpg)](https://www.youtube.com/watch?v=xmQO6UU7H98)
-<br/>
 ## License
 
 ```
